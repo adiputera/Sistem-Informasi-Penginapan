@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DFDDC6C-A934-4627-8F84-786427C38E52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistem_Informasi_Penginapan.My.MyApplication</StartupObject>
+    <RootNamespace>Sistem_Informasi_Penginapan</RootNamespace>
+    <AssemblyName>Sistem Informasi Penginapan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistem Informasi Penginapan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistem Informasi Penginapan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessData\accesskamar.vb" />
+    <Compile Include="AccessData\accesstamu.vb" />
+    <Compile Include="AccessData\AccessUser.vb" />
+    <Compile Include="del_tamu.Designer.vb">
+      <DependentUpon>del_tamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="del_tamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="e_kamar.Designer.vb">
+      <DependentUpon>e_kamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="e_kamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessData\sipModule.vb" />
+    <Compile Include="A_kamar.Designer.vb">
+      <DependentUpon>A_kamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_kamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_tamu.Designer.vb">
+      <DependentUpon>A_tamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_tamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_user.Designer.vb">
+      <DependentUpon>A_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del_kamar.Designer.vb">
+      <DependentUpon>del_kamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="del_kamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="del_user.Designer.vb">
+      <DependentUpon>del_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="del_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ee_user.designer.vb">
+      <DependentUpon>ee_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ee_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity\kamar.vb" />
+    <Compile Include="Entity\tamu.vb" />
+    <Compile Include="Entity\Users.vb" />
+    <Compile Include="e_tamu.Designer.vb">
+      <DependentUpon>e_tamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="e_tamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_kamar.designer.vb">
+      <DependentUpon>F_kamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_kamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login.designer.vb">
+      <DependentUpon>F_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Main.designer.vb">
+      <DependentUpon>F_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Resepsionis.designer.vb">
+      <DependentUpon>F_Resepsionis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Resepsionis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_tamu.designer.vb">
+      <DependentUpon>F_tamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_tamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="sipDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp.designer.vb">
+      <DependentUpon>StartUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_kamar.Designer.vb">
+      <DependentUpon>s_kamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="s_kamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_tamu.Designer.vb">
+      <DependentUpon>s_tamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="s_tamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_e.Designer.vb">
+      <DependentUpon>user_e.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_e.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="del_tamu.resx">
+      <DependentUpon>del_tamu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="e_kamar.resx">
+      <DependentUpon>e_kamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_kamar.resx">
+      <DependentUpon>A_kamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_tamu.resx">
+      <DependentUpon>A_tamu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_user.resx">
+      <DependentUpon>A_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del_kamar.resx">
+      <DependentUpon>del_kamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="del_user.resx">
+      <DependentUpon>del_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ee_user.resx">
+      <DependentUpon>ee_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="e_tamu.resx">
+      <DependentUpon>e_tamu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_kamar.resx">
+      <DependentUpon>F_kamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login.resx">
+      <DependentUpon>F_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Main.resx">
+      <DependentUpon>F_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Resepsionis.resx">
+      <DependentUpon>F_Resepsionis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_tamu.resx">
+      <DependentUpon>F_tamu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUp.resx">
+      <DependentUpon>StartUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_kamar.resx">
+      <DependentUpon>s_kamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_tamu.resx">
+      <DependentUpon>s_tamu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_e.resx">
+      <DependentUpon>user_e.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="sipDataSet.xsc">
+      <DependentUpon>sipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sipDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sipDataSet.xss">
+      <DependentUpon>sipDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="sip.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
